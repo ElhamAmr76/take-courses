@@ -6,8 +6,8 @@ class HandleFile :
 
     def read_info (self):
         with open (self.file_path, 'r') as read_file :
-            readerdict = csv.DictReader(read_file)
-            return(list(readerdict))
+            self.readerdict = csv.DictReader(read_file)
+            return(list(self.readerdict))
 
 
     def write_info_user (self, new_value):
