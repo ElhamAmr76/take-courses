@@ -6,8 +6,8 @@ class Units:
     def __init__(self,lesson,unit_number,Total_capacity,remain_capacity,teacher):  #define and add lesson to a file
         self.lesson=lesson
         self.unit_number=unit_number
-        self.Total_capacity=Total_capacity
-        self.remain_capacity=remain_capacity
+        self.Total_capacity=int(Total_capacity)
+        self.remain_capacity=int(remain_capacity)
         self.teacher=teacher
         
     def save(self): #append to file by this method
